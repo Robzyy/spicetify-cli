@@ -60,11 +60,6 @@ if ($PSVersionTable.PSVersion.Major -gt $PSMinVersion) {
   Expand-Archive -Path $zip_file -DestinationPath $sp_dir -Force
   Write-Done
 
-  # Remove .zip file.
-  Write-Part "REMOVING       "; Write-Emphasized $zip_file
-  Remove-Item -Path $zip_file
-  Write-Done
-
   # Get Path environment variable for the current user.
   $user = [EnvironmentVariableTarget]::User
   $path = [Environment]::GetEnvironmentVariable("PATH", $user)
