@@ -38,7 +38,7 @@ if ($PSVersionTable.PSVersion.Major -gt $PSMinVersion) {
   }
 
   # Create ~\spicetify-cli directory if it doesn't already exist
-  $sp_dir = "${HOME}\spicetify-cli"
+  $sp_dir = "${HOME}\spicetify\spicetify-cli"
   if (-not (Test-Path $sp_dir)) {
     Write-Part "MAKING FOLDER  "; Write-Emphasized $sp_dir
     New-Item -Path $sp_dir -ItemType Directory | Out-Null
