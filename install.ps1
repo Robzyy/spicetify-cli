@@ -29,7 +29,7 @@ if ($PSVersionTable.PSVersion.Major -gt $PSMinVersion) {
   if (-not $version) {
     # Determine latest Spicetify release via GitHub API.
     $latest_release_uri =
-    "https://api.github.com/repos/khanhas/spicetify-cli/releases/latest"
+    "https://api.github.com/repos/Robzyy/spicetify-cli/releases/latest"
     Write-Part "DOWNLOADING    "; Write-Emphasized $latest_release_uri
     $latest_release_json = Invoke-WebRequest -Uri $latest_release_uri -UseBasicParsing
     Write-Done
