@@ -197,7 +197,7 @@ func getSpicetifyFolder() string {
 	}
 
 	if runtime.GOOS == "windows" {
-		result = filepath.Join(os.Getenv("USERPROFILE"), ".spicetify")
+		result = filepath.Join(os.Getenv("USERPROFILE"), "spicetify\.spicetify")
 
 	} else if runtime.GOOS == "linux" {
 		parent, isAvailable := os.LookupEnv("XDG_CONFIG_HOME")
